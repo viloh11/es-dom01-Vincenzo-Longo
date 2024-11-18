@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="content-section">
+            <p>Testo 1</p>
+            <p>Testo 2</p>
+            <p>Testo 3</p>
+            <br>
+            <button id="changeColorBtn">Cambia colore</button>
+            <button id="changeFontWeightBtn">Cambia font weight</button>
+            <button id="toggleVisibilityBtn">Cambia visibilità</button>
+        </div>
+
+        <div class="article-section">
+            <h1>Crea il tuo articolo</h1>
+            <input type="text" id="title" placeholder="Inserisci il titolo"><br>
+            <textarea id="content" placeholder="Inserisci il paragrafo"></textarea>
+            <br>
+            <button id="createArticleBtn">Crea articolo</button>
+            <div id="articles"></div>
+        </div>
+    </div>
 </body>
 </html>
